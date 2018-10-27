@@ -1,0 +1,51 @@
+body {
+    background-color: #eeeeee;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #0f7ee6;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    box-shadow: 10px 15px 5px #054570;
+}
+
+.container h1 {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #4f1cc5;
+    font-size: 50px;
+    padding: 2px 0px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+
+#hr_top {
+    margin-bottom: 25px;
+}
+
+#hr_bot{
+    margin-bottom: 50px;
+}
+
+.container #question {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 35px;
+    color: #555555;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+#btn0 , #btn1, #btn2, #btn3  {
+    background-color: #ec0537;
+    border-radius: 50px;
+    width: 250px;
+    border: 1px solid;
+    font-size: 25px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
