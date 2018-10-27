@@ -18,16 +18,19 @@ $.ajax({
     url: queryURL,
     method: "GET",
 }).then(function(response){
+    correctAnswer = response.results[rand].correct_answer;
     choices.push(response.results[rand].correct_answer);
     for(var i = 0; i < 3; i++){
         choices.push(response.results[rand].incorrect_answers[i]);
     }
     trivia.push(response.results[rand].question);
-    $("#trivia").text(trivia[rand]);  
+    $("#trivia").html(trivia[0]);  
+    console.log(trivia, rand)
     
     for(var i = 0; i < choices.length; i++ ){
         var htmlButton = $("#answer" + i);
-        htmlButton.text(choices[i]);
+        htmlButton.html(choices[i]);
+        htmlButton.attr("value", choices[i]);
     }
     
     
@@ -39,15 +42,22 @@ $.ajax({
      console.log(response);
      console.log(choices);
     console.log(rand);
-    
-    
+    console.log(response.results[rand].correct_answer);
+    console.log(correctAnswer);
    //var questionDiv = $("<div class='questions'");
     
     //var htmlQuestion = $("<p>").text(trivia);
     
     //questionDiv.append(htmlQuestion);
-
-
 })
 
 
+$(this).on("click", function(){
+    var currentAnswer = $(this).attr("value") 
+    console.log(currentAnswer);
+    if(currentAnswer === correctAnswer){
+        console.log("Correct")
+    }else{
+        console.log("wrong!")
+    }
+})

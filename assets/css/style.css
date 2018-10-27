@@ -39,7 +39,11 @@ body {
 .buttons {
     margin-top: 30px;
 }
-
+#btn0, #btn1, #btn2, #btn3 :active {
+    background-color: #595959;
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
 #btn0 , #btn1, #btn2, #btn3  {
     background-color: #ec0537;
     border-radius: 50px;
@@ -48,4 +52,12 @@ body {
     font-size: 25px;
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
+    box-shadow: 6px 8px 5px #6f0b03;
+}
+
+#trivia {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
 }
