@@ -1,8 +1,11 @@
 body {
     background-color: #eeeeee;
+    
 }
 
 .container {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
     width: 600px;
     height: 500px;
     margin: 0 auto;
@@ -25,6 +28,9 @@ body {
 #hr_top {
     margin-bottom: 25px;
 }
+#hr_mid {
+    margin-top: 20px;
+}
 
 #hr_bot{
     margin-bottom: 50px;
@@ -39,12 +45,8 @@ body {
 .buttons {
     margin-top: 30px;
 }
-#btn0, #btn1, #btn2, #btn3 :active {
-    background-color: #595959;
-    transform: translateY(4px);
-    box-shadow: 0 5px #666;
-}
-#btn0 , #btn1, #btn2, #btn3  {
+
+button  {
     background-color: #ec0537;
     border-radius: 50px;
     width: 250px;
@@ -53,6 +55,14 @@ body {
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
     box-shadow: 6px 8px 5px #6f0b03;
+    outline:none;
+}
+
+button:active {
+    background-color: #595959;
+    transform: translateY(4px);
+    box-shadow: 0 5px 5px #666;
+    
 }
 
 #trivia {
